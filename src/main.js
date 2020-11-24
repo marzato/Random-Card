@@ -6,8 +6,11 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector(".top-suit").classList.add(generateRadomSuit());
-  document.querySelector(".top-suit").innerHTML = generateRadomSuit();
+  let pinta = generateRadomSuit();
+  document.querySelector(".top-suit").classList.add(pinta);
+  document.querySelector(".top-suit").innerHTML = pinta;
+  document.querySelector(".bottom-suit").classList.add(pinta);
+  document.querySelector(".bottom-suit").innerHTML = pinta;
 };
 
 let generateRadomNumber = () => {
